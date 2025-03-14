@@ -2,37 +2,50 @@ name: 解压文件
 
 on:
   push:
-    paths:
-      - '**/*.zip'
-      - '**/*.tar.gz'
+  workflow_dispatch:
 
 jobs:
   unzip:
     runs-on: ubuntu-latest
+    permissions:          # 添加权限设置
+      contents: write    # 确保有写入权限
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub Token
       
-      - name: 列出文件
+      - name: 调试信息
         run: |
-          echo "当前目录内容："
+          echo "当前目录信息："
+          pwd
           ls -la
+          echo "Git 状态："
+          git status
+          echo "查找 zip 文件："
+          find . -name "*.zip" || echo "没有找到 zip 文件"
           
       - name: 解压文件
         run: |
-          find . -name "*.zip" -type f -exec sh -c '
-            echo "正在解压: {}"
-            unzip -o "{}" && rm "{}"
-          ' \;
+          shopt -s nullglob  # 处理没有匹配文件的情况
+          for zip in $(find . -name "*.zip"); do
+            echo "正在解压: $zip"
+            unzip -o "$zip" || echo "解压 $zip 失败"
+            if [ $? -eq 0 ]; then
+              rm "$zip"
+              echo "$zip 解压完成并删除"
+            fi
+          done
           
-          find . -name "*.tar.gz" -type f -exec sh -c '
-            echo "正在解压: {}"
-            tar -xzf "{}" && rm "{}"
-          ' \;
-          
-      - name: 提交解压的文件
+      - name: 提交更改
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "自动解压文件" || echo "没有要提交的更改"
-          git push
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "有文件更改，准备提交..."
+            git add .
+            git commit -m "自动解压文件"
+            git push
+          else
+            echo "没有文件更改，跳过提交"
+          fi
