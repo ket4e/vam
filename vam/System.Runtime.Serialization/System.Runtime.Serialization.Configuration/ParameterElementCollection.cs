@@ -1,0 +1,17 @@
+using System.Configuration;
+
+namespace System.Runtime.Serialization.Configuration;
+
+[System.MonoTODO]
+public sealed class ParameterElementCollection : ConfigurationElementCollection
+{
+	protected override ConfigurationElement CreateNewElement()
+	{
+		throw new NotImplementedException();
+	}
+
+	protected override object GetElementKey(ConfigurationElement element)
+	{
+		throw new NotImplementedException();
+	}
+}

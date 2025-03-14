@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net20</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="go-previous.png" />
+    <None Remove="System.Windows.Forms.DnDCopy.cur" />
+    <None Remove="16_dialog-error.png" />
+    <None Remove="16_dialog-information.png" />
+    <None Remove="System.Windows.Forms.DnDNo.cur" />
+    <None Remove="System.Windows.Forms.DnDLink.cur" />
+    <None Remove="16_folder-remote.png" />
+    <None Remove="System.Windows.Forms.propertygrid-propertypages.png" />
+    <None Remove="16_folder.png" />
+    <None Remove="16_user-home.png" />
+    <None Remove="4-up.png" />
+    <None Remove="32_computer.png" />
+    <None Remove="32_printer.png" />
+    <None Remove="preferences-system-windows.png" />
+    <None Remove="1-up.png" />
+    <None Remove="System.Windows.Forms.propertygrid-categorized.png" />
+    <None Remove="16_document-open.png" />
+    <None Remove="32_user-desktop.png" />
+    <None Remove="22_page-magnifier.png" />
+    <None Remove="System.Windows.Forms.DnDMove.cur" />
+    <None Remove="user-desktop.png" />
+    <None Remove="document-open.png" />
+    <None Remove="image-missing.png" />
+    <None Remove="nav_delete.png" />
+    <None Remove="System.Windows.Forms.PropertyGridInternal.PropertiesTab.bmp" />
+    <None Remove="6-up.png" />
+    <None Remove="16_user-desktop.png" />
+    <None Remove="16_dialog-warning.png" />
+    <None Remove="16_computer.png" />
+    <None Remove="mono.ico" />
+    <None Remove="errorProvider.ico" />
+    <None Remove="nav_end.png" />
+    <None Remove="3-up.png" />
+    <None Remove="nav_first.png" />
+    <None Remove="go-top.png" />
+    <None Remove="System.Windows.Forms.propertygrid-alphabetical.png" />
+    <None Remove="computer.png" />
+    <None Remove="nav_previous.png" />
+    <None Remove="user-home.png" />
+    <None Remove="nav_next.png" />
+    <None Remove="nav_plus.png" />
+    <None Remove="16_printer.png" />
+    <None Remove="32_folder-remote.png" />
+    <None Remove="System.Windows.Forms.Design.EventsTab.bmp" />
+    <None Remove="System.Windows.Forms.SplitterWE.cur" />
+    <None Remove="folder.png" />
+    <None Remove="text-x-generic.png" />
+    <None Remove="System.Windows.Forms.NESW.cur" />
+    <None Remove="folder-new.png" />
+    <None Remove="folder-remote.png" />
+    <None Remove="2-up.png" />
+    <None Remove="System.Windows.Forms.SplitterNS.cur" />
+    <None Remove="32_document-open.png" />
+    <None Remove="32_user-home.png" />
+    <None Remove="image-x-generic.png" />
+    <None Remove="System.Windows.Forms.NWSE.cur" />
+    <EmbeddedResource Include="go-previous.png" LogicalName="go-previous.png" />
+    <EmbeddedResource Include="System.Windows.Forms.DnDCopy.cur" LogicalName="System.Windows.Forms.DnDCopy.cur" />
+    <EmbeddedResource Include="16_dialog-error.png" LogicalName="16_dialog-error.png" />
+    <EmbeddedResource Include="16_dialog-information.png" LogicalName="16_dialog-information.png" />
+    <EmbeddedResource Include="System.Windows.Forms.DnDNo.cur" LogicalName="System.Windows.Forms.DnDNo.cur" />
+    <EmbeddedResource Include="System.Windows.Forms.DnDLink.cur" LogicalName="System.Windows.Forms.DnDLink.cur" />
+    <EmbeddedResource Include="16_folder-remote.png" LogicalName="16_folder-remote.png" />
+    <EmbeddedResource Include="System.Windows.Forms.propertygrid-propertypages.png" LogicalName="System.Windows.Forms.propertygrid-propertypages.png" />
+    <EmbeddedResource Include="16_folder.png" LogicalName="16_folder.png" />
+    <EmbeddedResource Include="16_user-home.png" LogicalName="16_user-home.png" />
+    <EmbeddedResource Include="4-up.png" LogicalName="4-up.png" />
+    <EmbeddedResource Include="32_computer.png" LogicalName="32_computer.png" />
+    <EmbeddedResource Include="32_printer.png" LogicalName="32_printer.png" />
+    <EmbeddedResource Include="preferences-system-windows.png" LogicalName="preferences-system-windows.png" />
+    <EmbeddedResource Include="1-up.png" LogicalName="1-up.png" />
+    <EmbeddedResource Include="System.Windows.Forms.propertygrid-categorized.png" LogicalName="System.Windows.Forms.propertygrid-categorized.png" />
+    <EmbeddedResource Include="16_document-open.png" LogicalName="16_document-open.png" />
+    <EmbeddedResource Include="32_user-desktop.png" LogicalName="32_user-desktop.png" />
+    <EmbeddedResource Include="22_page-magnifier.png" LogicalName="22_page-magnifier.png" />
+    <EmbeddedResource Include="System.Windows.Forms.DnDMove.cur" LogicalName="System.Windows.Forms.DnDMove.cur" />
+    <EmbeddedResource Include="user-desktop.png" LogicalName="user-desktop.png" />
+    <EmbeddedResource Include="document-open.png" LogicalName="document-open.png" />
+    <EmbeddedResource Include="image-missing.png" LogicalName="image-missing.png" />
+    <EmbeddedResource Include="nav_delete.png" LogicalName="nav_delete.png" />
+    <EmbeddedResource Include="System.Windows.Forms.PropertyGridInternal.PropertiesTab.bmp" LogicalName="System.Windows.Forms.PropertyGridInternal.PropertiesTab.bmp" />
+    <EmbeddedResource Include="6-up.png" LogicalName="6-up.png" />
+    <EmbeddedResource Include="16_user-desktop.png" LogicalName="16_user-desktop.png" />
+    <EmbeddedResource Include="16_dialog-warning.png" LogicalName="16_dialog-warning.png" />
+    <EmbeddedResource Include="16_computer.png" LogicalName="16_computer.png" />
+    <EmbeddedResource Include="mono.ico" LogicalName="mono.ico" />
+    <EmbeddedResource Include="errorProvider.ico" LogicalName="errorProvider.ico" />
+    <EmbeddedResource Include="nav_end.png" LogicalName="nav_end.png" />
+    <EmbeddedResource Include="3-up.png" LogicalName="3-up.png" />
+    <EmbeddedResource Include="nav_first.png" LogicalName="nav_first.png" />
+    <EmbeddedResource Include="go-top.png" LogicalName="go-top.png" />
+    <EmbeddedResource Include="System.Windows.Forms.propertygrid-alphabetical.png" LogicalName="System.Windows.Forms.propertygrid-alphabetical.png" />
+    <EmbeddedResource Include="computer.png" LogicalName="computer.png" />
+    <EmbeddedResource Include="nav_previous.png" LogicalName="nav_previous.png" />
+    <EmbeddedResource Include="user-home.png" LogicalName="user-home.png" />
+    <EmbeddedResource Include="nav_next.png" LogicalName="nav_next.png" />
+    <EmbeddedResource Include="nav_plus.png" LogicalName="nav_plus.png" />
+    <EmbeddedResource Include="16_printer.png" LogicalName="16_printer.png" />
+    <EmbeddedResource Include="32_folder-remote.png" LogicalName="32_folder-remote.png" />
+    <EmbeddedResource Include="System.Windows.Forms.Design.EventsTab.bmp" LogicalName="System.Windows.Forms.Design.EventsTab.bmp" />
+    <EmbeddedResource Include="System.Windows.Forms.SplitterWE.cur" LogicalName="System.Windows.Forms.SplitterWE.cur" />
+    <EmbeddedResource Include="folder.png" LogicalName="folder.png" />
+    <EmbeddedResource Include="text-x-generic.png" LogicalName="text-x-generic.png" />
+    <EmbeddedResource Include="System.Windows.Forms.NESW.cur" LogicalName="System.Windows.Forms.NESW.cur" />
+    <EmbeddedResource Include="folder-new.png" LogicalName="folder-new.png" />
+    <EmbeddedResource Include="folder-remote.png" LogicalName="folder-remote.png" />
+    <EmbeddedResource Include="2-up.png" LogicalName="2-up.png" />
+    <EmbeddedResource Include="System.Windows.Forms.SplitterNS.cur" LogicalName="System.Windows.Forms.SplitterNS.cur" />
+    <EmbeddedResource Include="32_document-open.png" LogicalName="32_document-open.png" />
+    <EmbeddedResource Include="32_user-home.png" LogicalName="32_user-home.png" />
+    <EmbeddedResource Include="image-x-generic.png" LogicalName="image-x-generic.png" />
+    <EmbeddedResource Include="System.Windows.Forms.NWSE.cur" LogicalName="System.Windows.Forms.NWSE.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="Mono.WebBrowser">
+      <HintPath>F:\vam\VAM\Virt A Mate1.2\VaM_Data\Managed\Mono.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Mono.Posix" />
+    <Reference Include="Accessibility" />
+  </ItemGroup>
+</Project>

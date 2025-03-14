@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net20</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Mono.ico" />
+    <None Remove="Information.ico" />
+    <None Remove="Error.ico" />
+    <None Remove="Warning.ico" />
+    <None Remove="Question.ico" />
+    <EmbeddedResource Include="Mono.ico" LogicalName="Mono.ico" />
+    <EmbeddedResource Include="Information.ico" LogicalName="Information.ico" />
+    <EmbeddedResource Include="Error.ico" LogicalName="Error.ico" />
+    <EmbeddedResource Include="Warning.ico" LogicalName="Warning.ico" />
+    <EmbeddedResource Include="Question.ico" LogicalName="Question.ico" />
+  </ItemGroup>
+  <ItemGroup />
+</Project>

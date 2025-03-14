@@ -1,0 +1,9 @@
+namespace Un4seen.Bass.AddOn.DShow;
+
+public enum BASSDSHOWState
+{
+	BASS_DSHOW_STATE_UNKNOWN = -1,
+	BASS_DSHOW_STATE_PLAYING = 1,
+	BASS_DSHOW_STATE_PAUSED = 2,
+	BASS_DSHOW_STATE_STOPPED = 3
+}
