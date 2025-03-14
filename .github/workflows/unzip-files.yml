@@ -1,0 +1,38 @@
+name: 解压文件
+
+on:
+  push:
+    paths:
+      - '**/*.zip'
+      - '**/*.tar.gz'
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: 列出文件
+        run: |
+          echo "当前目录内容："
+          ls -la
+          
+      - name: 解压文件
+        run: |
+          find . -name "*.zip" -type f -exec sh -c '
+            echo "正在解压: {}"
+            unzip -o "{}" && rm "{}"
+          ' \;
+          
+          find . -name "*.tar.gz" -type f -exec sh -c '
+            echo "正在解压: {}"
+            tar -xzf "{}" && rm "{}"
+          ' \;
+          
+      - name: 提交解压的文件
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "自动解压文件" || echo "没有要提交的更改"
+          git push
